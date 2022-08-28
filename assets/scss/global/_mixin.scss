@@ -1,0 +1,41 @@
+@use "variable" as v;
+@use "sass:map";
+
+
+// Media queries
+
+@mixin is-xsmall($dir: v.$breakpoint-default-direction) {
+  @if $dir == 0 {
+    @error '$breakpoint-xsmallの値を入力してください';
+  }
+  @media #{map.get(v.$mediaQueries, "xsmall-" + $dir)} {
+    @content;
+  }
+}
+
+@mixin is-small($dir: v.$breakpoint-default-direction) {
+  @media #{map.get(v.$mediaQueries, "small-" + $dir)} {
+    @content;
+  }
+}
+
+@mixin is-medium($dir: v.$breakpoint-default-direction) {
+  @media #{map.get(v.$mediaQueries, "medium-" + $dir)} {
+    @content;
+  }
+}
+
+@mixin is-large($dir: v.$breakpoint-default-direction) {
+  @if $dir == "down" and v.$breakpoint-large == 0 {
+    @error "$breakpoint-large の値を0意外にしてください。また、 $breakpoint-default-direction の初期値が'up'の場合は使用できません。";
+  }
+  @media #{map.get(v.$mediaQueries, "large-" + $dir)} {
+    @content;
+  }
+}
+
+@mixin is-print($media: print) {
+  @media #{map.get(v.$mediaQueries, $media)} {
+    @content;
+  }
+}

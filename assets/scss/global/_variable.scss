@@ -1,0 +1,67 @@
+
+$color-primary: #000;
+$color-accent: #FFCB1F;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-border: $color-black;
+$color-text: $color-black;
+$color-back: #000;
+
+$font-family-ja: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+$font-family-en: "Helvetica Neue", Helvetica, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, "Yu Gothic", Meiryo, sans-serif;
+
+$font-default: 1.6rem;
+$font-small: 1.4rem;
+$font-large: 1.6rem;
+$font-xlarge: 1.6rem;
+
+$line-height-default: 1.5;
+$line-height-small: 1.45;
+$line-height-large: 1.8;
+
+$container-width: 1391px;
+$container-space-small: 8vw;
+$container-space-medium: 30px;
+$container-space-large: 30px;
+
+$header-height: 80px;
+
+$transition-default: .6s;
+$transition-fast: .3s;
+$transition-slow: .85s;
+
+
+
+
+// ブレイクポイントの向きを設定
+//  up : Mobile first
+//  down : PC first
+$breakpoint-default-direction: down !default;
+
+$breakpoint-xsmall: 0px; // Smartphone
+$breakpoint-small: 739px; // Table Portrait
+$breakpoint-medium: 1023px; // Tablet Landscape
+$breakpoint-large: 1199px; // Desktop
+
+$mediaQueries: (
+  // xsmall
+  "xsmall-down": "screen and (max-width: "$breakpoint-small")",
+  "xsmall-up": "screen and (min-width: "$breakpoint-xsmall + 1")",
+  "xsmall-only": "screen and (max-width: "$breakpoint-small")",
+  // small
+  "small-down": "screen and (max-width: "$breakpoint-small")",
+  "small-up": "screen and (min-width: "$breakpoint-small + 1")",
+  "small-only": "screen and (min-width: "$breakpoint-small + 1") and (max-width: "$breakpoint-medium")",
+  // medium
+  "medium-down": "screen and (max-width: "$breakpoint-medium")",
+  "medium-up": "screen and (min-width: "$breakpoint-medium + 1")",
+  "medium-only": "screen and (min-width: "$breakpoint-medium + 1") and (max-width: "$breakpoint-large")",
+  // large
+  "large-down": "screen and (max-width: "$breakpoint-large")",
+  "large-up": "screen and (min-width: "$breakpoint-large + 1")",
+  "large-only": "screen and (min-width: "$breakpoint-large + 1")",
+  // print
+  "print": "print"
+);

@@ -1,0 +1,64 @@
+@use "../global" as g;
+@use "sass:math";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 62.5%;
+  letter-spacing: 0.013em;
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: g.$header-height;
+}
+
+body {
+  font-family: g.$font-family-ja;
+  font-size: g.$font-default;
+  line-height: g.$line-height-default;
+  color: g.$color-text;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.inner {
+  max-width: g.$container-width;
+  padding: 0 var(--container-space);
+  margin: 0 auto;
+
+  @include g.is-small {
+    padding: 0 calc(var(--container-space) * 2);
+  };
+
+  &-fluid {
+    max-width: none;
+    padding: 0 calc(var(--container-space));
+  }
+}
+
+.inner-short {
+  max-width: g.$container-width;
+  padding: 0 var(--container-space);
+  margin: 0 auto;
+
+  @include g.is-small {
+    padding: 0 calc(var(--container-space) * 2);
+  };
+
+  &-fluid {
+    max-width: none;
+    padding: 0 calc(var(--container-space));
+  }
+}
