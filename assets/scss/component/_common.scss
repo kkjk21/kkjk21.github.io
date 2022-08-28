@@ -1,0 +1,19 @@
+@use '../global' as g;
+
+.hiddenPc {
+  @include g.is-small('up') {
+    display: none;
+  }
+}
+
+.hiddenSp {
+  @include g.is-small {
+    display: none !important;
+  }
+}
+
+.contents {
+  position: relative;
+  z-index: 5000;
+}
+

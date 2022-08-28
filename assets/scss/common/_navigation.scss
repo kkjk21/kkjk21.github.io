@@ -1,1 +1,80 @@
 @use '../global' as g;
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigationList {
+  padding: 0;
+  display: flex;
+  list-style: none;
+
+  @include g.is-large('down') {
+    display: none;
+  }
+}
+
+.navigationItem {
+  margin-right: 24px;
+
+  a {
+    font-weight: bold;
+    
+    &:hover {
+      opacity: .65;
+    }
+  }
+
+  i {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    margin-right: 0.5em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 2px solid transparent;
+      border-color: transparent g.$color-white g.$color-white transparent;
+      width: .6em;
+      height: .6em;
+      transform: translate(-50%, -70%) rotate(45deg);
+    }
+  }
+}
+
+.navigationTel {
+  a {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(g.$color-white, .15);
+    line-height: 1;
+    padding: 8px 16px 8px 12px;
+    font-size: 2rem;
+    font-family: g.$font-family-en;
+    border-radius: 0.2em;
+    position: relative;
+
+    @include g.is-small {
+      padding: 8px 16px;
+      margin-left: 1em;
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      background: rgba(g.$color-white, .05);
+    }
+
+    span {
+      margin-left: .5em;
+
+      @include g.is-small {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,2 +1,156 @@
 @use '../global' as g;
 @use "sass:map";
+
+.footer {
+  position: relative;
+  z-index: 6000;
+}
+
+.footerContact {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include g.is-small {
+    display: block;
+  }
+}
+
+.footerContactBlock {
+  margin: 1.5em 56px 0 0;
+
+  @include g.is-small {
+    margin: 0 0 0;
+  }
+}
+
+.footerContactHeading {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.footerContactData {
+  margin: 1em 0 0;
+  padding: 0;
+
+  @include g.is-small {
+    margin-top: 3.5em;
+  }
+}
+
+.footerContactList {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include g.is-small {
+    display: block;
+  }
+}
+
+.footerContactListItem {
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+  font-family: g.$font-family-en;
+  font-weight: 500;
+
+  @include g.is-small {
+    font-size: 2.4rem;
+    margin-top: 10px;
+  }
+
+  img {
+    width: 32px;
+    flex-shrink: 0;
+    margin-right: 0.25em;
+    vertical-align: middle;
+  }
+}
+
+.footerContactMail {
+  font-size: 4rem;
+  font-family: g.$font-family-en;
+  font-weight: 500;
+  margin: 1em 0 0;
+  
+  @include g.is-small {
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-top: 10px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 40px;
+    flex-shrink: 0;
+    margin-right: 0.5em;
+
+    @include g.is-small {
+      width: 32px;
+      margin-right: 0.25em;
+    }
+  }
+}
+
+.footerBottom {
+  border-top: 1px solid g.$color-white;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @include g.is-small {
+    margin-top: 2.937em;
+  }
+}
+
+.footerLogos {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 1.5em 0 0;
+
+  @include g.is-small {
+    width: 210px;
+  }
+}
+
+.footerLogo {
+  margin: 0 0 0 1em;
+  padding: 0;
+  line-height: 1;
+  
+  @include g.is-small {
+    margin: 4px 0 0 0;
+  }
+
+  img {
+    vertical-align: bottom;
+    height: 42px;
+
+    @include g.is-small {
+      height: 32px;
+    }
+  }
+}
+
+.footerCopyright {
+  margin: 0 0 6.785em;
+  font-size: 0.875em;
+
+  @include g.is-small {
+    margin: 0.57em 0 1.714em;
+  }
+
+  small {
+    font-size: 1em;
+  }
+}

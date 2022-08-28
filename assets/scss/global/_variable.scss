@@ -1,16 +1,15 @@
 
 $color-primary: #000;
 $color-accent: #FFCB1F;
-
-$color-black: #000;
+$color-black: #0B0C0B;
 $color-white: #fff;
 
 $color-border: $color-black;
 $color-text: $color-black;
-$color-back: #000;
+$color-back: $color-black;
 
 $font-family-ja: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
-$font-family-en: "Helvetica Neue", Helvetica, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, "Yu Gothic", Meiryo, sans-serif;
+$font-family-en: 'Roboto', sans-serif;
 
 $font-default: 1.6rem;
 $font-small: 1.4rem;
@@ -22,9 +21,9 @@ $line-height-small: 1.45;
 $line-height-large: 1.8;
 
 $container-width: 1391px;
-$container-space-small: 8vw;
+$container-space-small: 5.6074vw;
 $container-space-medium: 30px;
-$container-space-large: 30px;
+$container-space-large: 40px;
 
 $header-height: 80px;
 

@@ -1,1 +1,49 @@
 @use '../global' as g;
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: g.$header-height;
+  width: 100%;
+  background: g.$color-black;
+  border-bottom: 2px solid rgba(g.$color-white, .2);
+  z-index: 6000;
+}
+
+.headerInner {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5%;
+
+  @include g.is-medium {
+    padding: 0 var(--container-space);
+  }
+}
+
+.headerLogos {
+  display: flex;
+  font-size: 1px;
+  line-height: 1;
+
+  @include g.is-medium {
+    display: none;
+  }
+}
+
+.headerLogo {
+  margin-right: 24px;
+}
+
+.headerLogosSmall {
+  display: none;
+  margin: 0;
+  font-size: 1px;
+  line-height: 1;
+
+  @include g.is-medium {
+    display: block;
+  }
+}
