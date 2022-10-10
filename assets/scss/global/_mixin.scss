@@ -1,9 +1,7 @@
 @use "variable" as v;
 @use "sass:map";
 
-
 // Media queries
-
 @mixin is-xsmall($dir: v.$breakpoint-default-direction) {
   @if $dir == 0 {
     @error '$breakpoint-xsmallの値を入力してください';
@@ -37,5 +35,16 @@
 @mixin is-print($media: print) {
   @media #{map.get(v.$mediaQueries, $media)} {
     @content;
+  }
+}
+
+// images lazy view
+@mixin lazyView() {
+  clip-path: inset(0 100% 0 0);
+  vertical-align: bottom;
+  transition: clip-path .65s cubic-bezier(0.75, 0, 0, 1);
+  
+  &.isActive {
+    clip-path: inset(0 0 0 0);
   }
 }

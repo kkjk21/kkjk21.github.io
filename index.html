@@ -5,13 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社ダイトー | 大東金属株式会社</title>
-
+  <meta name="description" content="**********">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/app.css">
+  <link rel="preload" href="./assets/images//pages/front/visual_image.jpg" as="image">
+  <link rel="canonical" href="**********">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="株式会社ダイトー | 大東金属株式会社">
+  <meta property="og:description" content="**********">
+  <meta property="og:url" content="**********">
+  <meta property="og:site_name" content="株式会社ダイトー | 大東金属株式会社">
+  <meta property="og:image" content="**********/assets/images/ogp.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
-<body class="page-front">
+
+<body class="pageFront">
   <header class="header">
     <div class="headerInner">
       <h1 class="headerLogos">
@@ -24,153 +39,219 @@
       <div class="headerNavigation">
         <nav class="navigation">
           <ul class="navigationList">
-            <li class="navigationItem"><a href="#about"><i></i>会社概要</a></li>
+            <li class="navigationItem"><a href="#information"><i></i>会社概要</a></li>
             <li class="navigationItem"><a href="#contact"><i></i>お問い合わせ</a></li>
           </ul>
-          <p class="navigationTel"><a href="tel:0666566620"><img src="./assets/images/icons/icon_call.svg" alt="電話" width="30" aria-hidden="hidden"><span>06-6656-6620</span></a> </p>
+          <p class="navigationTel">
+            <a href="tel:0666566620"><img src="./assets/images/icons/icon_call.svg" alt="電話" width="30" aria-hidden="true"><span>06-6656-6620</span></a>
+          </p>
         </nav>
       </div>
     </div>
   </header>
   <main class="contents">
+    <div class="frontVisual">
+      <div class="frontVisualBefore">
+        <div class="inner">
+          <div class="frontVisualBeforeWrap">
+            <p class="frontVisualBeforeTextTop"><img src="./assets/images//pages/front/visual_text01.svg" alt="免震工事のダイトー。"></p>
+            <p class="frontVisualBeforeTextBottom"><img src="./assets/images//pages/front/visual_text01.svg" alt="免震工事のダイトー。"></p>
+          </div>
+        </div>
+      </div>
+      <div class="frontVisualAfter">
+        <div class="inner">
+          <h2 class="frontVisualAfterText"><img src="./assets/images//pages/front/visual_text02.svg" alt="免震工事のダイトー。"></h2>
+        </div>
+        <div class="frontVisualAfterImages" aria-hidden="true">
+          <div class="frontVisualAfterImage"><img src="./assets/images//pages/front/visual_image01.jpg" alt=""></div>
+          <div class="frontVisualAfterImage"><img src="./assets/images//pages/front/visual_image02.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
     <div class="inner">
-      <h2>免震工事のダイトー。</h2>
-      <section>
-        <h3 class="frontHeadingEn">Manufacturing</h3>
-        <p class="frontLeadText">ベースプレートの製作・加工の<br>
-          ほぼすべての工程を自社でやっており、<br>
-          低コストで製作可能です。</p>
+      <section class="frontManufacturing">
+        <header>
+          <h3 class="frontHeadingEn jsLazyView">Manufacturing</h3>
+          <p class="frontLeadText jsLazyView">ベースプレートの製作・加工の<br>ほぼすべての工程を自社でやっており、<br>低コストで製作可能です。</p>
+        </header>
+        <div class="frontManufacturingGallery">
+          <div class="jsFrontGallery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/pages/front/im_gallery01.jpg" alt="イメージ写真" width="554" class="jsLazyView" loading="lazy">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/pages/front/im_gallery02.jpg" alt="イメージ写真" width="554" class="jsLazyView" loading="lazy">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/pages/front/im_gallery03.jpg" alt="イメージ写真" width="554" class="jsLazyView" loading="lazy">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/pages/front/im_gallery04.jpg" alt="イメージ写真" width="554" class="jsLazyView" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
-        <h3 class="frontHeadingEn">Construction</h3>
-        <p class="frontLeadText">弊社直雇用、正社員の<br>
-          経験豊富な職人が施工いたします。</p>
+      <section class="frontConstruction">
+        <header class="frontConstructionHeader">
+          <div class="frontConstructionHeaderInner">
+            <h3 class="frontHeadingEn jsLazyView">Construction</h3>
+            <p class="frontLeadText jsLazyView">弊社直雇用、<br class="hiddenPc">正社員の<br class="hiddenSp">経験豊富な職人が<br class="hiddenPc">施工いたします。</p>
+          </div>
+        </header>
+        <p class="frontConstructionImage"><img src="./assets/images/pages/front/im_construction.png" width="869" alt="Construction" loading="lazy"></p>
       </section>
-      <section>
-        <h3 class="frontLeadTextLarge">日本全国の<br>免震施工実績</h3>
-        <dl>
-          <dt>総施工数</dt>
-          <dd>200,000基以上</dd>
-        </dl>
-        <dl>
-          <dt>総施工数</dt>
-          <dd>200,000基以上</dd>
-        </dl>
-        <dl>
-          <dt>国外</dt>
-          <dd>50,000基以上</dd>
-        </dl>
-        <p>map</p>
-        <h4>GLOBAL</h4>
-        <ul>
-          <li>韓国</li>
-          <li>台湾</li>
-          <li>インドネシア</li>
-          <li>ハイチ</li>
-        </ul>
-      </section>
-      <section>
-        <h3 class="frontHeadingEn">Information</h3>
-        <p class="frontLeadText">会社概要</p>
-        <table class="frontCompanyTable">
-          <thead>
-            <tr>
-              <th scope="row">会社名</th>
-              <th scope="col">株式会社ダイトー</th>
-              <th scope="row">大東金属株式会社</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>代表取締役</th>
-              <td rowspan="2">井上一郎</td>
-            </tr>
-            <tr>
-              <th>設立</th>
-              <td>1997年7月</td>
-              <td>1938年1月</td>
-            </tr>
-            <tr>
-              <th>所在地</th>
-              <td>大阪市西成区千本南2-16-43</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th>連絡先</th>
-              <td>
-                <ul>
-                  <li>TEL：06-6656-6620</li>
-                  <li>FAX：06-6656-6622</li>
-                </ul>
-              </td>
-              <td>
-                <ul>
-                  <li>TEL：06-6658-3410</li>
-                  <li>FAX：06-6657-0823</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>資本金</th>
-              <td>10,000,000円</td>
-              <td>10,000,000円</td>
-            </tr>
-            <tr>
-              <th>事業内容</th>
-              <td>免震装置の施工、xxx</td>
-              <td>免震装置用ベースプレートの製造、鉄筋カプラーの製造、xxx</td>
-            </tr>
-            <tr>
-              <th>事業免許</th>
-              <td>建設業許可（xx号）</td>
-              <td>xxx</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <section>
-          <h4>本社兼大阪工場</h4>
-          <p>大阪市西成区千本南2-16-43</p>
-          <ul>
-            <li>TEL：06-6656-6620</li>
-            <li>FAX：06-6656-6622</li>
+      <section class="frontAchievement">
+        <div class="frontAchievementData">
+          <header class="frontAchievementHeader">
+            <h3 class="frontLeadTextLarge jsLazyView">日本全国の<br>免震施工実績</h3>
+          </header>
+          <dl class="frontAchievementLength">
+            <dt class="frontAchievementLengthHeading">総施工数</dt>
+            <dd class="frontAchievementLengthData"><span>200,000</span>基以上</dd>
+          </dl>
+          <dl class="frontAchievementLengthSmall">
+            <dt class="frontAchievementLengthSmallHeading">国内</dt>
+            <dd class="frontAchievementLengthSmallData"><span>200,000</span>基以上</dd>
+          </dl>
+          <dl class="frontAchievementLengthSmall">
+            <dt class="frontAchievementLengthSmallHeading">国外</dt>
+            <dd class="frontAchievementLengthSmallData"><span>50,000</span>基以上</dd>
+          </dl>
+        </div>
+        <p class="frontAchievementMap jsLazyView"><img src="./assets/images/pages/front/im_map_achievement.png" alt="国内の実績地図">
+        </p>
+        <div class="frontAchievementGlobal">
+          <h4 class="frontAchievementGlobalHeading">GLOBAL</h4>
+          <ul class="frontAchievementGlobalList">
+            <li class="frontAchievementGlobalListItem">韓国</li>
+            <li class="frontAchievementGlobalListItem">台湾</li>
+            <li class="frontAchievementGlobalListItem">インドネシア</li>
+            <li class="frontAchievementGlobalListItem">ハイチ</li>
           </ul>
-        </section>
-        <section>
-          <h4>長浜工場</h4>
-          <p>滋賀県長浜市細江町900-3</p>
-          <ul>
-            <li>TEL：00-0000-0000</li>
-            <li>FAX：00-0000-0000</li>
-          </ul>
-        </section>
-        <section>
-          <h4>東京営業所</h4>
-          <p>東京都千代田区東神田2-3-9 グレース東神田1001号</p>
-          <ul>
-            <li>TEL 00-0000-0000</li>
-          </ul>
-        </section>
-        <section>
-          <h4>九州営業所</h4>
-          <p>福岡県北九州市小倉南区中曽根東3-3-57</p>
-          <ul>
-            <li>TEL 00-0000-0000</li>
-          </ul>
-        </section>
+        </div>
       </section>
     </div>
+    <section class="frontInformation" id="information">
+      <div class="frontInformationInner">
+        <div class="inner">
+          <div class="frontHeadingEnWrap">
+            <h3 class="frontHeadingEn jsLazyView">Information</h3>
+            <p class="frontLeadText jsLazyView">会社概要</p>
+          </div>
+          <div class="frontInformationContents">
+            <h4 class="frontInformationSubHeading hiddenPc">株式会社ダイトー</h4>
+            <table class="frontCompanyTable jsCompanyTable">
+              <thead class="frontCompanyTableHead">
+                <tr>
+                  <th class="frontCompanyTableHeading" scope="row">会社名</th>
+                  <th class="frontCompanyTableData isDaito" scope="col">株式会社ダイトー</th>
+                  <th class="frontCompanyTableData isMetal" scope="row">大東金属株式会社</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="frontCompanyTableHeading" scope="row">代表取締役</th>
+                  <td class="frontCompanyTableData" colspan="2">井上一郎</td>
+                </tr>
+                <tr>
+                  <th class="frontCompanyTableHeading" scope="row">設立</th>
+                  <td class="frontCompanyTableData isDaito">1997年7月</td>
+                  <td class="frontCompanyTableData isMetal">1938年1月</td>
+                </tr>
+                <tr>
+                  <th class="frontCompanyTableHeading" scope="row">所在地</th>
+                  <td class="frontCompanyTableData" colspan="2">大阪市西成区千本南2-16-43</td>
+                </tr>
+                <tr>
+                  <th class="frontCompanyTableHeading" scope="row">連絡先</th>
+                  <td class="frontCompanyTableData isDaito">
+                    <ul>
+                      <li>TEL：06-6656-6620</li>
+                      <li>FAX：06-6656-6622</li>
+                    </ul>
+                  </td>
+                  <td class="frontCompanyTableData isMetal">
+                    <ul>
+                      <li>TEL：06-6658-3410</li>
+                      <li>FAX：06-6657-0823</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="frontCompanyTableHeading" scope="row">資本金</th>
+                  <td class="frontCompanyTableData isDaito">10,000,000円</td>
+                  <td class="frontCompanyTableData isMetal">10,000,000円</td>
+                </tr>
+                <tr>
+                  <th class="frontCompanyTableHeading" scope="row">事業内容</th>
+                  <td class="frontCompanyTableData isDaito">免震装置の施工、xxx</td>
+                  <td class="frontCompanyTableData isMetal">免震装置用ベースプレートの製造、鉄筋カプラーの製造、xxx</td>
+                </tr>
+                <tr>
+                  <th class="frontCompanyTableHeading" scope="row">事業免許</th>
+                  <td class="frontCompanyTableData isDaito">建設業許可（xx号）</td>
+                  <td class="frontCompanyTableData isMetal">xxx</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 class="frontInformationSubHeading hiddenPc">大東金属株式会社</h4>
+            <div class="frontInformationTableContainer jsCompanyTableContainer"></div>
+            <div class="frontCompanyLocations">
+              <section class="frontCompanyLocation">
+                <p class="frontCompanyLocationImage"><img src="./assets/images/common/im_location_main_ofiice.jpg" alt="本社兼大阪工場" class="jsLazyView" loading="lazy">
+                </p>
+                <h4 class="frontCompanyLocationHeading">本社兼大阪工場</h4>
+                <p class="frontCompanyLocationAddress">大阪市西成区千本南2-16-43</p>
+                <ul class="frontCompanyLocationContats">
+                  <li class="frontCompanyLocationContat">TEL：06-6656-6620</li>
+                  <li class="frontCompanyLocationContat">FAX：06-6656-6622</li>
+                </ul>
+              </section>
+              <section class="frontCompanyLocation">
+                <p class="frontCompanyLocationImage"><img src="./assets/images/common/im_location_nagahama.jpg" alt="長浜工場" class="jsLazyView" loading="lazy">
+                </p>
+                <h4 class="frontCompanyLocationHeading">長浜工場</h4>
+                <p class="frontCompanyLocationAddress">滋賀県長浜市細江町900-3</p>
+                <ul class="frontCompanyLocationContats">
+                  <li class="frontCompanyLocationContat">TEL：00-0000-0000</li>
+                  <li class="frontCompanyLocationContat">FAX：00-0000-0000</li>
+                </ul>
+              </section>
+              <section class="frontCompanyLocation">
+                <h4 class="frontCompanyLocationHeading">東京営業所</h4>
+                <p class="frontCompanyLocationAddress">東京都千代田区東神田2-3-9 グレース東神田1001号</p>
+                <ul class="frontCompanyLocationContats">
+                  <li class="frontCompanyLocationContat">TEL：00-0000-0000</li>
+                </ul>
+              </section>
+              <section class="frontCompanyLocation">
+                <h4 class="frontCompanyLocationHeading">九州営業所</h4>
+                <p class="frontCompanyLocationAddress">福岡県北九州市小倉南区中曽根東3-3-57</p>
+                <ul class="frontCompanyLocationContats">
+                  <li class="frontCompanyLocationContat">TEL：00-0000-0000</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="inner">
-      <h2 class="frontHeadingEn">Contact</h2>
-      <p class="frontLeadText">お問い合わせ</p>
+      <div class="frontHeadingEnWrap">
+        <h2 class="frontHeadingEn jsLazyView">Contact</h2>
+        <p class="frontLeadText jsLazyView">お問い合わせ</p>
+      </div>
       <div class="footerContact">
         <dl class="footerContactBlock">
           <dt class="footerContactHeading hiddenSp">株式会社ダイトー</dt>
           <dd class="footerContactData">
             <ul class="footerContactList">
-              <li class="footerContactListItem"><img src="./assets/images/icons/icon_call.svg" alt="電話" width="30" aria-hidden="hidden">06-6656-6620</li>
+              <li class="footerContactListItem"><img src="./assets/images/icons/icon_call.svg" alt="電話" width="30" aria-hidden="true">06-6656-6620</li>
               <li class="footerContactListItem"><img src="./assets/images/icons/icon_fax.svg" alt="FAX" width="30">06-6656-6622</li>
             </ul>
           </dd>
@@ -179,14 +260,15 @@
           <dt class="footerContactHeading">大東金属株式会社</dt>
           <dd class="footerContactData">
             <ul class="footerContactList">
-              <li class="footerContactListItem"><img src="./assets/images/icons/icon_call.svg" alt="電話" width="30" aria-hidden="hidden">06-6658-3410</li>
+              <li class="footerContactListItem"><img src="./assets/images/icons/icon_call.svg" alt="電話" width="30" aria-hidden="true">06-6658-3410</li>
               <li class="footerContactListItem"><img src="./assets/images/icons/icon_fax.svg" alt="FAX" width="30">06-6657-0823</li>
             </ul>
           </dd>
         </dl>
       </div>
-      <p class="footerContactMail"><a href="mailto:info@k-daito.com"><img src="./assets/images/icons/icon_mail.svg" alt="FAX" width="30">info@k-daito.com</a></p>
-
+      <p class="footerContactMail"><a
+          href="mailto:info@k-daito.com"><img src="./assets/images/icons/icon_mail.svg" alt="FAX" width="30">info@k-daito.com</a>
+      </p>
       <div class="footerBottom">
         <ul class="footerLogos">
           <li class="footerLogo"><img src="./assets/images/common/logo_daito.svg" alt="株式会社ダイトー"></li>
@@ -196,6 +278,10 @@
       </div>
     </div>
   </footer>
-  <div class="back"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <script src="./assets/js/scripts.js" defer></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
   height: g.$header-height;
   width: 100%;
   background: g.$color-black;
-  border-bottom: 2px solid rgba(g.$color-white, .2);
+  border-bottom: g.$header-border solid rgba(g.$color-white, .2);
   z-index: 6000;
 }
 
